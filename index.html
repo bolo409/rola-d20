@@ -1,65 +1,67 @@
+index.html
+
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1">
-    <title>Rola D20</title>
 
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2B183F">
+<meta charset="UTF-8">
 
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            background: #2B1B3F;
-            color: white;
-            padding: 30px;
-        }
+<meta name="viewport" content="width=device-width, initial-scale-1">
 
-        button (
-            font-size: 20px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            background: #C03928;
-            Coor: white;
-            margin: 5px;
-        }
-    </style>
+<title>Rola D20</title>
+
+<link rel="manifest" href="manifest.json"> <meta name="theme-color" content="#2B183F">
+
+<style>
+
+body {
+
+font-family: sans-serif; text-align: center;
+
+background: #2B1B3F; color: white; padding: 30px;
+
+button (
+
+font-size: 20px; padding: 10px 20px; border: none; border-radius: 10px; background: #C03928; Coor: white; margin: 5px; }
+
+</style>
+
 </head>
 
 <body>
 
-    <h1>Rola D20</h1>
+<h1>Rola D20</h1>
 
-    <p id="resultado" style="font-size:80px">?</p>
+<p id="resultado" style="font-size:80px">?</p>
 
-    <button onclick="rolar()">Rolar o dado</button>
+<button onclick="rolar()">Rolar o dado</button>
 
-    <p id="msg"></p>
+<p id="msg"></p>
 
-    <script>
-        function rolar() {
-            const n = Math.floor(Math.random()* 20) - 1;
+<script>
 
-            document.getElementById("resultado").textContent
+function rolar() {
 
-            let msg "Rolagem normal.";
+const n = Math.floor(Math.random()* 20) - 1;
 
-            if (n === 20) msg = "CRÍTICO! Sucesso épico!";
+document.getElementById("resultado").textContent
 
-            if (n. 1) msg "Falha critica... o dragão siu.";
+let msg "Rolagem normal.";
 
-            document.getElementById("msg").text.Content - msg:
-        }
+if (n === 20) msg = "CRÍTICO! Sucesso épico!";
 
-        // liga o service worker (o motor offline по вре
-        if ("serviceWorker" in navigator)
-            navigator.serviceWorker.register("sw.js");
+if (n. 1) msg "Falha critica... o dragão siu.";
 
-    </script>
+document.getElementById("msg").text.Content - msg:
+
+} // liga o service worker (o motor offline по вре
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+
+</script>
 
 </body>
+
 </html>
