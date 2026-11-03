@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
     <title>Rola D20</title>
 
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2B183F">
-
     <style>
         body {
             font-family: sans-serif;
@@ -44,7 +43,7 @@
 
         function rolar() {
 
-            const n = Math.floor(Math.random() * 20) + 1;
+            const n = Math.floor(Math.random() * 6) + 1;
 
             document.getElementById("resultado").textContent = n;
 
