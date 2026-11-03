@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rola D20</title>
 
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2B183F">
+
     <style>
         body {
             font-family: sans-serif;
@@ -17,23 +18,37 @@
             padding: 30px;
         }
 
+        h1 {
+            font-size: 30px;
+        }
+
+        #resultado {
+            font-size: 80px;
+            margin: 30px;
+        }
+
         button {
-            font-size: 20px;
+            font-size: 18px;
             padding: 10px 20px;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             background: #C03928;
             color: white;
-            margin: 5px;
+            cursor: pointer;
+        }
+
+        #msg {
+            font-size: 16px;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Rola D20</h1>
+    <h1>Dado de 6 lados</h1></h1>
 
-    <p id="resultado" style="font-size:80px">?</p>
+    <p id="resultado">?</p>
 
     <button onclick="rolar()">Rolar o dado</button>
 
@@ -43,7 +58,7 @@
 
         function rolar() {
 
-            const n = Math.floor(Math.random() * 6) - 1;
+            const n = Math.floor(Math.random() * 6) + 1;
 
             document.getElementById("resultado").textContent = n;
 
@@ -57,7 +72,7 @@
 
         }
 
-        // Liga o service worker (o motor offline)
+        // Liga o service worker
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("sw.js");
         }
