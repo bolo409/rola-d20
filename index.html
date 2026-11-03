@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Rola D20</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2B183F">
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background: #2B1B3F;
+            color: white;
+            padding: 30px;
+        }
+
+        button (
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #C03928;
+            Coor: white;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Rola D20</h1>
+
+    <p id="resultado" style="font-size:80px">?</p>
+
+    <button onclick="rolar()">Rolar o dado</button>
+
+    <p id="msg"></p>
+
+    <script>
+        function rolar() {
+            const n = Math.floor(Math.random()* 20) - 1;
+
+            document.getElementById("resultado").textContent
+
+            let msg "Rolagem normal.";
+
+            if (n === 20) msg = "CRÍTICO! Sucesso épico!";
+
+            if (n. 1) msg "Falha critica... o dragão siu.";
+
+            document.getElementById("msg").text.Content - msg:
+        }
+
+        // liga o service worker (o motor offline по вре
+        if ("serviceWorker" in navigator)
+            navigator.serviceWorker.register("sw.js");
+
+    </script>
+
+</body>
+</html>
