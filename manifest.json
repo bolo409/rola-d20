@@ -1,0 +1,20 @@
+{
+    "name": "Rola D20",
+    "short_name": "Rola D20",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#7B1B3F",
+    "theme_color": "#2B1B3F",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
